@@ -13,11 +13,10 @@
 			<div><label>Last Name:<input type="text" name="last_name_field"></label></div>
 			<div><label>Phone Number:<input type="text" name="phone_field"></label></div>
 			<div><label>Email Address:<input type="text" name="email_field"></label></div>
-			<div><p>Gender :</p></div>
-			<div>
+			<div><label>Gender:
 				<label>Male<input type="radio" name="gender_field" value="male"></label>
 				<label>Female<input type="radio" name="gender_field" value="female"></label>
-			</div>
+			</div></label>
 			<div>
 				<label>Age :<select name="age_field">
 					<option>under 18</option>
@@ -32,11 +31,20 @@
 		</fieldset>
 		<fieldset>
 			<legend>My Availability</legend>
+			<div><p>Days Available:</p></div>
 			<div>
-				<input type=”checkbox" name="variable" value="thevalue">
+				<label>Sunday<input type=”checkbox" name="available_field[]" value="sunday">
+				<label>Monday<input type=”checkbox" name="available_field[]" value="monday">
+				<label>Tuesday<input type=”checkbox" name="available_field[]" value="tuesday">
+				<label>Wednesday<input type=”checkbox" name="available_field[]" value="wednesday">
+				<label>Thursday<input type=”checkbox" name="available_field[]" value="thursday">
+				<label>Friday<input type=”checkbox" name="available_field[]" value="friday">
+				<label>Saturday<input type=”checkbox" name="available_field[]" value="saturday">
 			</div>
+			<textarea name="comments_field" >Any Comments?</textarea>
 		</fieldset>
-		hiden
+		<input type="submit" value="Send Me">
+		<input type="hidden" name="hidden_field" value="acastilla">
 	</form>
 </body>
 </html>
